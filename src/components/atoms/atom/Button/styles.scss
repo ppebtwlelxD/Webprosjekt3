@@ -1,0 +1,26 @@
+@import '../../../../styles/toolkit.scss';
+
+.button {
+  min-width: 100px;
+  padding: 10px;
+  background-color: transparent;
+  text-align: center;
+
+  .buttonLink {
+    color: black;
+  }
+}
+.ActionButton {
+  min-width: 100px;
+  border-radius: 4px;
+  color: black;
+
+  &.danger {
+    color: white;
+    background-color: red;
+  }
+  &.base {
+    color: white;
+    background-color: green;
+  }
+}

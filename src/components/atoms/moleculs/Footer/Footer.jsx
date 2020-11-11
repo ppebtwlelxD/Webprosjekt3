@@ -10,10 +10,10 @@ const Footer = () => {
         <div className={styles.footer}>
 
             <div className={styles.para}>
-                <h1 className={styles.Fheader}>Companies</h1>
+                <h1 className={styles.Fheader}>Home</h1>
                 <ul>
                     <li>
-                        <a href="#">All companies</a>
+                        <a href="#">Type in here</a>
                     </li>
 
                     <li>
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.para}>
-                <h1 className={styles.Fheader}>Projects</h1>
+                <h1 className={styles.Fheader}>Community</h1>
                 <ul>
                     <li>
                         <a href="#">All projects</a>
@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.para}>
-                <h1 className={styles.Fheader}>Profile</h1>
+                <h1 className={styles.Fheader}>Social</h1>
                 <ul>
                     <li>
                         <a href="#">User List</a>
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.para}>
-                <h1 className={styles.Fheader}>Help</h1>
+                <h1 className={styles.Fheader}>Market</h1>
                 <ul>
                     <li>
                         <a href="#">About</a>
