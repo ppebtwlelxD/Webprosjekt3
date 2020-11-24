@@ -1,8 +1,13 @@
-import ActionButton from 'src/components/atoms/atom/Button/ActionButton.jsx';
-import Button from 'src/components/atoms/atom/Button/Button.jsx';
-import Header from 'src/components/atoms/moleculs/Header/Header.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './components/App';
 
 
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-
-export { Button, Header, ActionButton };
