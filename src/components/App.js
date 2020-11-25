@@ -1,6 +1,6 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './atoms/moleculs/Header/Navbar';
+import Navbar from '../components/atoms/moleculs/Header/Navbar';
+import FooterPage from './atoms/moleculs/Footer/FooterPage';
 
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <>
     <h1>Company Name</h1>
       <Navbar />
+      <FooterPage />
     </>
   );
 }

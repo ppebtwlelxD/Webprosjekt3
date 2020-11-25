@@ -1,16 +1,5 @@
 @import '../../../../styles/toolkit.scss';
 
-.headerContainer {
-  display: flex;
-  width: 100%;
-  background-color: $defaultHeaderColor;
-  border-bottom: 5px solid darken(#1b1049, $amount: 5);
-  a {
-    color: #fff !important;
-  }
-
-  .loginName {
-    color: wheat;
-    padding: 10px;
-  }
+.navbar {
+  font-size: 1.5rem;
 }

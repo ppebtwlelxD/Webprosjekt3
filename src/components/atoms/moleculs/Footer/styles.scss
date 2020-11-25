@@ -1,72 +1,59 @@
-@import '../../../../styles/toolkit.scss';
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    overflow: hidden;
+    background-color: #212121;
+    margin-top: 3rem;
+    position: fixed;
+    bottom: 0%;
 
-.footer {
-  width: 100%;
-  display: block;
-  height: auto;
-  overflow: hidden;
-  background-color: green;
-  margin-top: 3rem;
-}
-
-.para {
-  width: 190px;
-  height: auto;
-  float: left;
-  box-sizing: border-box;
-  padding: 0px 20px 20px 20px;
-
-  .Fheader {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: 12px;
-    line-height: 17px;
-    padding: 20px 0px 5px 0px;
-    color: slategrey;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-
-      a {
-        color: #ffffff !important;
-        font-size: 14px;
-        font-family: inherit;
-        font-weight: bold;
-        padding: 7px 5px 7px 5px;
-        cursor: pointer;
-        transition: 0.2s;
-        display: block;
-      }
-      
-      a:link {
-        text-decoration: none;
-      }
-      
-      a:visited {
-        text-decoration: none;
-      }
-      
-      a:hover {
-        text-decoration: underline;
-      }
-      
-      a:active {
-        text-decoration: underline;
-      }
-
+    .footer-icons {
+            color: #ffffff;
+            font-size: 2em;
+            font-family: inherit;
+            font-weight: bold;
+            padding: 0.5em;
+            cursor: pointer;
+            transition: 0.2s;
+            display: block;
     }
-  }
-}
 
-.clearfix {
-  clear: both;
-}
+    ul {
+        list-style-type: none;
+        padding: 1em;
+        
+        li {
+    
+          a {
+            color: #ffffff;
+            font-size: 1em;
+            font-family: inherit;
+            font-weight: bold;
+            padding: 0.5em;
+            cursor: pointer;
+            transition: 0.2s;
+            display: block;
+          }
+          
+          a:link {
+            text-decoration: none;
+          }
+          
+          a:visited {
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: underline;
+          }
+          
+          a:active {
+            text-decoration: underline;
+          }
+    
+        }
+      }
+  }
