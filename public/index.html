@@ -49,46 +49,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <body>
     
-      <!-- NAVBAR -->
+      <!-- LOGINDIV -->
 
-        <div>
-          <ul id="nav-mobile" class="hide-on-med-and-down loginul" >
-              <li class="logged-in" style="display: none;" >
-                <a href="#" class=" button modal-trigger" data-target="modal-account">Account</a>
-              </li>
-              <li class="logged-in" style="display: none;">
-                <a href="#" class=" button modal-trigger"  id="logout">Logout</a>
-              </li>
-              <li class="logged-out" style="display: none;">
-                <a href="#" class=" button modal-trigger"  data-target="modal-login">Login</a>
-              </li>
-              <li class="logged-out" style="display: none;">
-                <a href="#" class=" button modal-trigger"  data-target="modal-signup">Sign up</a>
-              </li>
-            </span>
-          </ul>
-        </div>
     <div id="root"></div>
 
+     <ul  id="nav-mobile" class="ulnav hide-on-med-and-down">
+      <li class="list"><a onclick="homeshow()" class="active lista" href="#Home">Home</a></li>
+      <li class="list"><a onclick="communityshow()" class="lista" href="#Community">Community</a></li>
+      <li class="list"><a onclick="markdeshop()" class="lista" href="#Market">Market</a></li>
+      <li class="list"><a onclick="abuteshow()" class="lista" href="#Abute">Abute</a></li>
 
-   <div class="logged-in" style="display: none;">
-        Price <input type="text" id="pbox">
-        Description <input type="text" id="dbox">
-        Title <input type="text" id="title">
-        <style> img { height: 100px; width: 100px;} </style>
-        <img id="myimg"><label id="upProgress"></label>
+      <li class="logged-in list" style="display: none; float:right;"><a href="#" class="lista  modal-trigger"  id="logout">Logout</a></li>
+      <li class="logged-in list" style="display: none; float:right;" ><a href="#" class="lista  modal-trigger" data-target="modal-account">Profil</a></li>
+      <li class="logged-out list" style="display: none; float:right;"><a href="#" class="lista  modal-trigger"  data-target="modal-login">Login</a></li>
+      <li class="logged-out list" style="display: none; float:right;"><a href="#" class="lista  modal-trigger"  data-target="modal-signup">Sign up</a></li>
+  </ul>
 
-        <button id='upload'>Upload</button>
-        <button id='select'>Select</button>
-     </div>
+    <div Id="abute" style="display: none;">
+      <div>
+        <div>
+            <h3>Page Owner</h3>
+            <p>Contact: Pavan Sriram</p>
+            <p>Email: pavan.sriram@digitalnorway.com</p>
+            <p>Mobile: 41067657</p>
+        </div>
+    </div>
+    </div>
 
+  <div Id="home" style="display: block;">
     <div>
-      <div id="posts-collection">
+          <p>
+          <h3>Page Discription</h3>
+          <p>This page is the onestop shop for global mobility and collaboration activities within Education, Research and Innovation.
+              The users of this page are  be the students, parents (of high school students),
+              teachers/researchers/instructors and institutions through one digital platform.</p>
+
+
+          </p>
       </div>
-    </div>
+ </div>
+
+
+    <div Id="marked" style="display: none;">
+
+    <div class="marked">
+      <h2>Marked</h2>
+      <p>
+        Here you can sell the thing u dont need anymore to 
+        other students in the area. This may be usefull if 
+        you are done with your studies or if u just started 
+        out to get some of the thing you need.
+      </p>
+    
+      <div class="logged-in" style="display: none;">
+            Price <input type="text" id="pbox">
+            Description <input type="text" id="dbox">
+            Title <input type="text" id="title">
+            <style> img { height: 100px; width: 100px;} </style>
+            <img id="myimg"><label id="upProgress"></label>
+
+            <button id='upload'>Upload</button>
+            <button id='select'>Select</button>
+        </div>
+
+        <div class="container">
+          <div class="row" id="posts-collection">
+            <hr />
+          </div>
+        
+        </div>
 
     </div>
+  </div>
+
+
         <style>
+      .ulnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .list {
+      float: left;
+      border-right:1px solid #bbb;
+    }
+    
+    .list:last-child {
+      border-right: none;
+    }
+    
+    .lista {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .lista:hover:not(.active) {
+      background-color: #111;
+    }
+    
         .button {
           border: none;
           color: white;
@@ -158,6 +222,62 @@
           <div class="account-details"></div>
         </div>
       </div>
+
+      <script>
+      
+
+            function markdeshop() {
+            var markedx = document.getElementById("marked");
+            var homex = document.getElementById("home");
+            var abutex = document.getElementById("abute");
+            markedx.style.display = "none"
+            homex.style.display = "none"
+            abutex.style.display = "none"
+            if (markedx.style.display === "none") {
+              markedx.style.display = "block";
+            } else {
+              markedx.style.display = "none";
+            }
+          }
+          function homeshow() {
+            var homex = document.getElementById("home");
+            var markedx = document.getElementById("marked");
+            var abutex = document.getElementById("abute");
+            markedx.style.display = "none"
+            homex.style.display = "none"
+            abutex.style.display = "none"
+            if (homex.style.display === "none") {
+              homex.style.display = "block";
+            } else {
+              homex.style.display = "none";
+            }
+          }
+
+          function abuteshow() {
+            var homex = document.getElementById("home");
+            var markedx = document.getElementById("marked");
+            var abutex = document.getElementById("abute");
+            markedx.style.display = "none"
+            homex.style.display = "none"
+            homex.style.display = "none"
+            if (abutex.style.display === "none") {
+              abutex.style.display = "block";
+            } else {
+              abutex.style.display = "none";
+            }
+          }
+
+          // function communityshow() {
+          //   var markedx = document.getElementById("marked");
+          //   if (markedx.style.display === "none") {
+          //     markedx.style.display = "block";
+          //   } else {
+          //     markedx.style.display = "none";
+          //   }
+          // }
+      </script>
+
+
       <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>

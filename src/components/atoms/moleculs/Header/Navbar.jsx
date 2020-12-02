@@ -23,7 +23,7 @@ const Navbar = () => {
                         <a className="nav-link text-white" href="#">Social</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-white" href="#">Market</a>
+                        <a  onclick="markdeshop()" className="nav-link text-white markedbutton" href="#">Market</a>
                     </li>
                 </ul>
                 <form className="form-inline my-2 my-lg-0">
