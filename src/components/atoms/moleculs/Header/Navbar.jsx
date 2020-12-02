@@ -11,7 +11,7 @@ const Navbar = () => {
             <a className="navbar-brand" href="#"></a>
 
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                <ul className="navbar-nav mr-auto mt-2 mt-lg-0" id="mian_nav_bar_list">
                     <li className="nav-item active">
                         <a className="nav-link text-white" href="#">Home&nbsp;<i class="fas fa-home">
                             </i> <span className="sr-only">(current)</span></a>
