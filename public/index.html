@@ -47,13 +47,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
+    <h1>Company Name</h1>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     
       <!-- LOGINDIV -->
 
-    <div id="root"></div>
+
 
      <ul  id="nav-mobile" class="ulnav hide-on-med-and-down">
       <li class="list"><a onclick="homeshow() ,topFunction()" class="active lista" href="#Home">Home</a></li>
@@ -144,9 +144,9 @@
         <div class="inSide">
             <h2 class="h2-sid" >What was your semester abroad like </h2>
         Title <br>
-        <input type="text" id="title"> <br>
+        <input type="text" id="title2"> <br>
         Country <br>
-        <select id="country" name="country">
+        <select id="country2" name="country">
             <option value="Afganistan">Afghanistan</option>
             <option value="Albania">Albania</option>
             <option value="Algeria">Algeria</option>
@@ -395,10 +395,10 @@
             <option value="Zimbabwe">Zimbabwe</option>
          </select><br>
         Text <br> 
-        <textarea class="textarea" cols="30" rows="10" minlength="100" maxlength="1000"></textarea>
+        <textarea id="textarea2" cols="30" rows="10" minlength="100" maxlength="1000"></textarea>
         <br>
         <label for="score">Raiting:</label>
-        <select  id="score" name="score">
+        <select  id="score2" name="score">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -411,15 +411,15 @@
             <option value="10">10</option>
         </select>
 
-        <button class="buttonUp" id='upload'>Submit</button> 
+        <button class="buttonUp" id='upload2'>Submit</button> 
         </div>
     </div> 
 
-</div>    
+   
 <div class="container">
     <div class="row" id="firbaseAd2"></div>
   </div>
-
+</div> 
 </div>
 
     <div Id="marked" style="display: none;">
@@ -516,6 +516,7 @@
           <div class="account-details"></div>
         </div>
       </div>
+
       <script>
         function topFunction() {
         document.body.scrollTop = 0;
@@ -905,8 +906,8 @@ setTimeout(function(){location.reload()},6000);
                 let postCollection2 = document.querySelector("#firbaseAd2");
 
 function createPost2(title, land, tekst, rating) {
-  let div = document.createElement("div");
-  div.setAttribute("class", "adContentFirbase");
+  let div2 = document.createElement("div");
+  div2.setAttribute("class", "adContentFirbase2");
 
   let h3 = document.createElement("h3");
   let p = document.createElement("p");
@@ -918,12 +919,12 @@ function createPost2(title, land, tekst, rating) {
   article.textContent = "Traveld to:  " + land;
   h4.textContent =  "Rating " + rating +"/10";
 
-  div.appendChild(h3);
-  div.appendChild(p);
-  div.appendChild(article);
-  div.appendChild(h4);
+  div2.appendChild(h3);
+  div2.appendChild(p);
+  div2.appendChild(article);
+  div2.appendChild(h4);
 
-  postCollection2.appendChild(div);
+  postCollection2.appendChild(div2);
 }
 
 function getPosts2() {
@@ -950,11 +951,11 @@ getPosts2();
 //upload prosess--------------------------------------------------------------------------------------------------------------
 
 
-document.querySelector("#upload").addEventListener("click", function() {
-let head = document.querySelector('#title').value;
-let country = document.querySelector('#country').value;
-let tekst = document.querySelector('#textarea').value;
-let score = document.querySelector('#score').value;
+document.querySelector("#upload2").addEventListener("click", function() {
+let head = document.querySelector('#title2').value;
+let country = document.querySelector('#country2').value;
+let tekst = document.querySelector('#textarea2').value;
+let score = document.querySelector('#score2').value;
 let Dname = Math.floor(Math.random() * 100000);
 
 
@@ -983,8 +984,9 @@ setTimeout(function(){location.reload()},1000);
 
 
       </script>
+  
+<div id="root"></div>
+ </body>
 
 
-
-  </body>
 </html>

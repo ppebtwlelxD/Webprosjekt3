@@ -1,3 +1,5 @@
+
+
 .bigblockl{
     width: 20%;
     float:left;
@@ -217,7 +219,7 @@
         display: grid;
         margin-left: 5rem;
         margin-right: 10rem;
-        grid-template-columns: repeat(2, minmax(10rem, 3fr));
+        grid-template-columns: repeat(3);
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 3rem;
         grid-row-gap: 2rem;
@@ -239,6 +241,7 @@
         text-align: left;
 
       }
+      
       .adContentFirbase2 > h4 {
           margin-top: -1rem;
           text-align: center;

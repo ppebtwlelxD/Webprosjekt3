@@ -7,7 +7,6 @@ import Mainpage from '../components/atoms/moleculs/Mainpage/Mainpage';
 function App() {
   return (
     <>
-    <h1>Company Name</h1>
       <FooterPage />
     </>
   );
