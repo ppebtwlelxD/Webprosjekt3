@@ -219,7 +219,7 @@
         display: grid;
         margin-left: 5rem;
         margin-right: 10rem;
-        grid-template-columns: repeat(3);
+        grid-template-columns: repeat(3, minmax(10rem, 3fr));
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 3rem;
         grid-row-gap: 2rem;
